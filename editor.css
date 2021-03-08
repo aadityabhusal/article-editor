@@ -1,0 +1,122 @@
+body{
+	background: #fff;
+}
+
+#container{
+	width: 800px;
+	border: 1px solid #ececec;
+	margin: 30px auto;
+	padding: 20px;
+}
+
+#title-box{
+	margin-bottom: 20px;
+}
+
+#title{
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+
+#title-image{
+	margin-bottom: 20px;
+	position: relative;
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#image{
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+#image-label{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+}
+
+#image-label svg{
+	margin-left: 10px;
+}
+
+.displayImage{
+	max-width: 50%;
+	max-height: 200px;
+	margin-left: 50px;
+}
+
+#description-area{
+	position: relative;
+}
+
+#tool-bar{
+	display: flex;
+	font-weight: bold;
+	justify-content: center;
+	width: 100%;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	background: #fff;
+}
+
+#tool-bar button{
+	font-size: 18px;
+	border: 1px solid #ccc;
+	flex: 1;
+	cursor: pointer;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	padding: 3px 0;
+	outline: 0;
+}
+
+#tool-bar button svg{
+	align-self: center;
+}
+
+#tool-bar button:first-child{
+	border-radius: 5px 0 0 0;
+}
+
+#tool-bar button:last-child{
+	border-radius: 0 5px 0 0;
+}
+
+#description{
+	padding: 10px;
+	padding-top: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-top: none;
+	outline: 0;
+	min-height: 300px;
+	display: inline-block;
+}
+
+[contenteditable=true]:empty:before{
+	content: attr(placeholder); 
+	display: block; 
+	color:rgb(128,128,128); /* For Firefox */
+}
+
+#post{
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	margin-top: 10px;
+	cursor: pointer;
+	background: #3498db;
+	color: white;
+	margin-right: 10px;
+	font-size: 18px;
+}
